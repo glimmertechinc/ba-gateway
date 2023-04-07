@@ -1,0 +1,13 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: CORE-SERVICE
+          uri: lb://CORE-SERVICE
+          predicates:
+            - Path=/**
