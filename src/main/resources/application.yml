@@ -1,5 +1,11 @@
 server:
   port: 9090
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://bookingappeurekaserver-env.eba-rkupjnj7.ap-south-1.elasticbeanstalk.com/eureka
+  instance:
+    preferIpAddress: true
 
 spring:
   application:
